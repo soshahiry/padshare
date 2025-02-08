@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadShare - Emergency Sanitary Pad Locator</title>
+    <style>
+        :root {
+            --primary-pink: #FF69B4;
+            --light-pink: #FFC0CB;
+            --white: #FFFFFF;
+            --dark-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--dark-gray);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-container h1 {
+            color: var(--primary-pink);
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-pink);
+            padding: 2rem;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--dark-gray);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-pink);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #FF1493;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: var(--white);
+        }
+
+        .about-section h3 {
+            color: var(--primary-pink);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>PadShare</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h2>Never Feel Stranded Again</h2>
+            <p class="quote">"Supporting each other in times of need, creating a caring community one pad at a time."</p>
+            <div class="button-container">
+                <a href="login.html" class="btn-primary">Start Now</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="about-section">
+        <h3>About PadShare</h3>
+        <p>PadShare connects students who need emergency sanitary supplies with those who can help. Our platform creates a supportive network within the college community, ensuring no one has to worry during unexpected situations.</p>
+    </section>
+</body>
+</html>

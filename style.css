@@ -1,0 +1,145 @@
+/* Global Styles */
+:root {
+    --primary-pink: #FF69B4;
+    --light-pink: #FFC0CB;
+    --white: #FFFFFF;
+    --dark-gray: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-container h1 {
+    color: var(--primary-pink);
+    font-size: 2rem;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-pink);
+    padding: 2rem;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-pink);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.about-section h3 {
+    color: var(--primary-pink);
+    margin-bottom: 1rem;
+}
+
+/* Auth Forms */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.8rem;
+    border: 1px solid var(--light-pink);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-redirect {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.link-primary {
+    color: var(--primary-pink);
+    text-decoration: none;
+}
+
+.link-primary:hover {
+    text-decoration: underline;
+}
